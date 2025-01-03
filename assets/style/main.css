@@ -6,6 +6,12 @@
 body {
   font-family: var(--font-Almarai);
 }
+html {
+  scroll-behavior: smooth;
+}
+section {
+  margin: 100px 0 0 0;
+}
 :root {
   --font-Almarai: "El Messiri", serif;
   --font-bold: bold;
@@ -43,6 +49,7 @@ header {
   position: sticky;
   top: 0;
   background-color: #f54748;
+  z-index: 1;
 }
 ul {
   display: flex;
@@ -284,5 +291,61 @@ h1 {
     position: relative;
     left: 120px;
     top: 30px;
+  }
+}
+.image-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  justify-content: center;
+  padding: 20px;
+}
+
+.image-item {
+  flex: 1 1 calc(33.333% - 40px); 
+  text-align: center;
+  margin: 10px;
+  max-width: 300px; 
+}
+
+.image-item img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+.image-item h3 {
+  margin: 10px 0;
+  font-size: 1.2rem;
+  color: var(--color-Baltic-Sea);
+}
+
+.image-item p {
+  font-size: 0.9rem;
+  color: var(--color-Baltic-Sea);
+}
+
+.image-item button {
+  padding: 10px 40px;
+  font-size: 1rem;
+  color: #fff;
+  background-color: #ff9800;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+}
+
+.image-item button:hover {
+  background-color: #e68900;
+}
+
+@media (max-width: 768px) {
+  .image-item {
+    flex: 1 1 calc(50% - 20px);
+  }
+}
+
+@media (max-width: 480px) {
+  .image-item {
+    flex: 1 1 100%; 
   }
 }
