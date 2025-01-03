@@ -244,7 +244,7 @@ h1 {
 @media (max-width: 1227px) {
   .some-grills {
     display: none;
-    }
+  }
 }
 @media (max-width: 991px) {
   h1 {
@@ -253,7 +253,7 @@ h1 {
     margin-right: 30%;
   }
   .some-grills {
-  display: none;
+    display: none;
   }
   .intersect {
     margin-left: -30px;
@@ -292,6 +292,19 @@ h1 {
     left: 120px;
     top: 30px;
   }
+  .grilled img  {
+    width: 30%;
+    position: relative;
+    top: 500px;
+    left: 30%;
+  }
+  .chef-tow {
+    position: relative;
+    top: 300px;
+  }
+  .chef-tow img {
+    width: 60%;
+  }
 }
 .image-gallery {
   display: flex;
@@ -302,10 +315,10 @@ h1 {
 }
 
 .image-item {
-  flex: 1 1 calc(33.333% - 40px); 
+  flex: 1 1 calc(33.333% - 40px);
   text-align: center;
   margin: 10px;
-  max-width: 300px; 
+  max-width: 300px;
 }
 
 .image-item img {
@@ -346,6 +359,69 @@ h1 {
 
 @media (max-width: 480px) {
   .image-item {
+    flex: 1 1 100%;
+  }
+}
+.grilled {
+  text-align: end;
+  margin-left: 10%;
+  position: relative;
+  bottom: 400px;
+}
+.chef-tow {
+  margin: -550px 0 0 0;
+}
+.about-us {
+  margin: 40px auto;
+  max-width: 800px;
+}
+
+.about-us h2 {
+  font-size: 36px;
+  color: var(--color-Carmine-Pink);
+}
+
+.love {
+  color: var(--color-Orangey-Yellow);
+}
+
+.about-us p {
+  font-size: 18px;
+  color: var(--color-Baltic-Sea);
+  line-height: 1.8;
+}
+
+.services {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: 15%;
+}
+
+.service-item {
+  flex: 1 1 calc(44.33% - 100px); 
+  max-width: calc(44.33% - 100px);
+  background-color: #f9f9f9;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.service-item h3 {
+  font-size: 18px;
+  color: var(--color-Carmine-Pink);
+}
+
+@media (max-width: 768px) {
+  .service-item {
+    flex: 1 1 calc(50% - 20px); 
+    max-width: calc(50% - 20px);
+  }
+}
+
+@media (max-width: 480px) {
+  .service-item {
     flex: 1 1 100%; 
+    max-width: 100%;
   }
 }
