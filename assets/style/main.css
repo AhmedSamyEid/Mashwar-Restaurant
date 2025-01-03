@@ -38,6 +38,12 @@ body {
   justify-content: space-between;
   text-align: center;
 }
+header {
+  height: 100px;
+  position: sticky;
+  top: 0;
+  background-color: #f54748;
+}
 ul {
   display: flex;
   gap: 40px;
@@ -47,6 +53,7 @@ a {
   font-size: 18px;
   font-weight: var(--font-bold);
   color: var(--color-Baltic-Sea);
+  cursor: pointer;
 }
 li {
   list-style: none;
@@ -69,6 +76,7 @@ li {
   border-radius: 50px;
   border: none;
   background-color: var(--color-Orangey-Yellow);
+  cursor: pointer;
 }
 label {
   display: none;
@@ -80,7 +88,8 @@ label {
   .container img {
     display: none;
   }
-  ul ,.fa-xmark {
+  ul,
+  .fa-xmark {
     display: none;
   }
   label {
@@ -109,5 +118,165 @@ label {
     position: fixed;
     z-index: 1;
     margin: -40px 20px 0 0;
+  }
+}
+
+.home {
+  flex-wrap: wrap;
+  text-align: end;
+  margin-left: 140px;
+  gap: 20px;
+  padding: 20px;
+}
+h1 {
+  font-size: 48px;
+  font-weight: var(--font-bold);
+}
+.grilled {
+  color: var(--color-Carmine-Pink);
+}
+.shawarma {
+  color: var(--color-Orangey-Yellow);
+}
+
+.search-container {
+  justify-content: center;
+  margin: 20px;
+}
+
+.search-container input {
+  width: 20%;
+  padding: 10px;
+  font-size: 16px;
+  border: 2px solid #007bff;
+  border-radius: 50px;
+}
+
+.search-container button {
+  width: 161px;
+  height: 44px;
+  font-size: 18px;
+  background-color: var(--color-Carmine-Pink);
+  color: white;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.5s;
+}
+
+.search-container button:hover {
+  background-color: #c23d26;
+}
+
+.result-container {
+  width: 20%;
+  margin: 20px 80% 0 0;
+  text-align: end;
+}
+
+.result-container .found {
+  padding: 10px;
+  background-color: #d4edda;
+  color: #155724;
+  border: 1px solid #c3e6cb;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+.result-container .not-found {
+  padding: 10px;
+  background-color: #f8d7da;
+  color: #721c24;
+  border: 1px solid #f5c6cb;
+  border-radius: 5px;
+}
+
+.chef {
+  flex-wrap: wrap;
+  flex: 1 1 45%;
+  gap: 20px;
+  margin: -350px 0 0 50%;
+}
+.intersect {
+  width: 385px;
+  height: 598px;
+  margin: -800px 0 0 70px;
+}
+.circle {
+  display: inline-block;
+  width: 500px;
+  height: 500px;
+  border-radius: 50%;
+  background-color: var(--color-Carmine-Pink);
+}
+.some-grills {
+  margin: -500px 0 0 0;
+}
+.card,
+.tandoori {
+  margin: 0 0 0 -100px;
+}
+
+.seekPng {
+  margin: -120px 0 100px;
+}
+.text-of,
+.big {
+  margin: 170px 0 0 -40px;
+  padding: 0 30px;
+}
+.chicken {
+  position: relative;
+  top: 130px;
+  left: 40%;
+}
+.tandoori {
+  position: relative;
+  bottom: 140px;
+}
+@media (max-width: 1227px) {
+  .some-grills {
+    display: none;
+    }
+}
+@media (max-width: 991px) {
+  h1 {
+    font-size: 25px;
+    width: 100%;
+    margin-right: 20%;
+  }
+  .some-grills {
+  display: none;
+  }
+  .intersect {
+    margin-left: -30px;
+    margin-bottom: 20px;
+  }
+  .about-chef p {
+    margin-right: 20%;
+    width: 100%;
+  }
+  #search,
+  #i-ask-now {
+    width: 70%;
+    margin-right: 40%;
+  }
+  .chef {
+    margin: 100px 20px 0 0;
+    flex-direction: column;
+  }
+
+  .circle {
+    width: 300px;
+    height: 300px;
+  }
+
+  .intersect {
+    width: 150px;
+    height: 350px;
+  }
+
+  .some-grills img {
+    width: 100px;
   }
 }
