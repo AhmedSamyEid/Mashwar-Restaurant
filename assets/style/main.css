@@ -243,7 +243,7 @@ h1 {
   h1 {
     font-size: 25px;
     width: 100%;
-    margin-right: 20%;
+    margin-right: 30%;
   }
   .some-grills {
   display: none;
@@ -259,7 +259,7 @@ h1 {
   #search,
   #i-ask-now {
     width: 70%;
-    margin-right: 40%;
+    margin-right: 60%;
   }
   .chef {
     margin: 100px 20px 0 0;
@@ -278,5 +278,11 @@ h1 {
 
   .some-grills img {
     width: 100px;
+  }
+  .result-container {
+    width: 120%;
+    position: relative;
+    left: 120px;
+    top: 30px;
   }
 }
