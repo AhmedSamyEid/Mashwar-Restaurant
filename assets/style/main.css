@@ -296,11 +296,11 @@ h1 {
     width: 30%;
     position: relative;
     top: 500px;
-    left: 30%;
+    left: 10%;
   }
   .chef-tow {
     position: relative;
-    top: 300px;
+    top: 250px;
   }
   .chef-tow img {
     width: 60%;
@@ -364,9 +364,9 @@ h1 {
 }
 .grilled {
   text-align: end;
-  margin-left: 10%;
   position: relative;
   bottom: 400px;
+  
 }
 .chef-tow {
   margin: -550px 0 0 0;
@@ -400,10 +400,7 @@ h1 {
 .service-item {
   flex: 1 1 calc(44.33% - 100px); 
   max-width: calc(44.33% - 100px);
-  background-color: #f9f9f9;
   padding: 15px;
-  border-radius: 10px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   text-align: center;
 }
 
