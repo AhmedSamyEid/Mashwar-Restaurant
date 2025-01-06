@@ -139,7 +139,7 @@ h1 {
   font-size: 48px;
   font-weight: var(--font-bold);
 }
-.grilled {
+.grilleds {
   color: var(--color-Carmine-Pink);
 }
 .shawarma {
@@ -457,7 +457,6 @@ footer {
   overflow: hidden;
   text-align: center;
   transition: transform 0.3s, box-shadow 0.3s;
-  /* background-color: #721c24; */
 }
 
 .card:hover {
@@ -524,7 +523,9 @@ footer {
 .footer-section {
   flex: 1;
   min-width: 200px;
-  margin: 10px;
+  margin: 20px;
+  position: relative;
+  top: 50px;
 }
 
 .footer-section h4 {
