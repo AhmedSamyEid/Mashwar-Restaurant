@@ -6,6 +6,14 @@
 body {
   font-family: var(--font-Almarai);
 }
+.eg {
+  background-color: black;
+  --color-Carmine-Pink: #f54748;
+  --color-Orangey-Yellow: #ffbc0d;
+  --color-Baltic-Sea: #ffffff;
+  --color-Rangoon-Green: #ffffff;
+  --color-black: black;
+}
 html {
   scroll-behavior: smooth;
 }
@@ -18,7 +26,12 @@ section {
   --color-Carmine-Pink: #f54748;
   --color-Orangey-Yellow: #ffbc0d;
   --color-Baltic-Sea: #292929;
-  --color-Rangoon-Green: #191919;
+  --color-Rangoon-Green: #ffffff;
+  --background-color: #087bff78;
+  --color-black: #ffffff;
+}
+.fa-moon {
+  font-size: 25px;
 }
 .container {
   padding: 50px 15px;
@@ -138,6 +151,9 @@ label {
 h1 {
   font-size: 48px;
   font-weight: var(--font-bold);
+}
+.a {
+  color: var(--color-Rangoon-Green);
 }
 .grilleds {
   color: var(--color-Carmine-Pink);
@@ -292,7 +308,7 @@ h1 {
     left: 120px;
     top: 30px;
   }
-  .grilled img  {
+  .grilled img {
     width: 30%;
     position: relative;
     top: 500px;
@@ -301,7 +317,6 @@ h1 {
   .chef-tow {
     position: relative;
     top: 250px;
-    
   }
   .chef-tow img {
     width: 60%;
@@ -312,16 +327,19 @@ h1 {
     left: 20%;
   }
   .food-cards {
-  position: relative;
-  top: 700px;
-  right: 2%;
-}
-.services {
-  margin-right: 10%;
-}
-footer {
-  margin-top: 700px;
-}
+    position: relative;
+    top: 600px;
+    right: 2%;
+  }
+  .services {
+    margin-right: 10%;
+  }
+  footer {
+    margin-top: 700px;
+  }
+  .we-serve-you-with-all-love .about-us p {
+    width: 85%;
+  }
 }
 .image-gallery {
   display: flex;
@@ -383,7 +401,6 @@ footer {
   text-align: end;
   position: relative;
   bottom: 400px;
-  
 }
 .chef-tow {
   margin: -550px 0 0 0;
@@ -404,6 +421,7 @@ footer {
 }
 
 .about-us p {
+  width: 60%;
   font-size: 18px;
   margin-right: 10%;
   color: var(--color-Baltic-Sea);
@@ -417,7 +435,7 @@ footer {
 }
 
 .service-item {
-  flex: 1 1 calc(33.33% - 100px); 
+  flex: 1 1 calc(33.33% - 100px);
   max-width: calc(33.33% - 100px);
   padding: 15px;
   text-align: center;
@@ -430,14 +448,14 @@ footer {
 
 @media (max-width: 768px) {
   .service-item {
-    flex: 1 1 calc(50% - 20px); 
+    flex: 1 1 calc(50% - 20px);
     max-width: calc(50% - 20px);
   }
 }
 
 @media (max-width: 480px) {
   .service-item {
-    flex: 1 1 100%; 
+    flex: 1 1 100%;
     max-width: 100%;
   }
 }
@@ -472,7 +490,7 @@ footer {
 
 .card h3 {
   font-size: 24px;
-  color:var(--color-Carmine-Pink);
+  color: var(--color-Carmine-Pink);
   margin: 10px 0;
 }
 
@@ -484,7 +502,7 @@ footer {
 
 .card .price {
   font-size: 1.2rem;
-  color: #007BFF;
+  color: #007bff;
   font-weight: bold;
   margin: 10px 0;
   display: block;
@@ -505,7 +523,7 @@ footer {
   background-color: #d83434;
 }
 footer {
-  background-color: #f8f8f8;
+  background-color: var(--color-black);
   color: #333;
   font-family: Arial, sans-serif;
   padding: 20px 0;
@@ -531,10 +549,11 @@ footer {
 .footer-section h4 {
   font-size: 18px;
   margin-bottom: 10px;
-  color: #111;
+  color: var(--color-black);
 }
 
-.footer-section p, .footer-section ul {
+.footer-section p,
+.footer-section ul {
   font-size: 14px;
   line-height: 1.6;
 }
@@ -545,12 +564,12 @@ footer {
   gap: 10px;
   padding: 0;
 }
-
 .footer-section ul li {
   margin: 5px 0;
 }
 
-.footer-section p i, .footer-section ul li i {
+.footer-section p i,
+.footer-section ul li i {
   margin-right: 8px;
   color: #d32f2f;
 }

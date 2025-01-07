@@ -13,7 +13,7 @@ iasknow.onclick = () => {
   let data = findbranches.value.trim();
   function displayRestaurantLocations(data) {
     let resultContainer = document.getElementById("data");
-    resultContainer.innerHTML = ""; 
+    resultContainer.innerHTML = "";
 
     if (typeof data === "string" && data.length > 0) {
       let found = false;
@@ -33,4 +33,12 @@ iasknow.onclick = () => {
   }
 
   displayRestaurantLocations(data);
+};
+
+document.getElementById("eg").onclick = () => {
+  if (document.body.classList.contains("eg")) {
+    document.body.classList.remove("eg");
+  } else {
+    document.body.classList.add("eg");
+  }
 };
