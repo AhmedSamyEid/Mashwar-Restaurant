@@ -42,3 +42,11 @@ document.getElementById("eg").onclick = () => {
     document.body.classList.add("eg");
   }
 };
+
+document.getElementById("fa-bars").onclick = () => {
+  if (document.getElementById("nav-mune").classList.contains("open")) {
+    document.getElementById("nav-mune").classList.remove("open");
+  } else {
+    document.getElementById("nav-mune").classList.add("open");
+  }
+};
